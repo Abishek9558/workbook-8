@@ -21,6 +21,7 @@ public class App1 {
         ResultSet results = statement.executeQuery(query);
 
         System.out.printf("%-5s %-30s %-10s %-10s%n", "Id", "Name", "Price", "Stock");
+        System.out.println("-------------------------------------------------------------");
 
         while (results.next()) {
             int id = results.getInt("ProductID");
